@@ -1,0 +1,64 @@
+/* Algemene stijl voor het menu */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav#main-menu {
+    background-color: #0e0d0d;
+  }
+  
+  nav#main-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav#main-menu li {
+    margin: 0;
+  }
+  
+  nav#main-menu a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav#main-menu a:hover {
+    background-color: #575757;
+  }
+  
+  /* Hamburger knop */
+  #menu-toggle {
+    display: none;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive: onder de 600px breedte */
+  @media (max-width: 600px) {
+    #menu-toggle {
+      display: block;
+    }
+  
+    nav#main-menu ul {
+      display: none;
+      flex-direction: column;
+    }
+  
+    nav#main-menu.show ul {
+      display: flex;
+    }
+  
+    nav#main-menu a {
+      border-top: 1px solid #444;
+    }
+  }
+  
